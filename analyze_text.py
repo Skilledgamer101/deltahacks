@@ -87,8 +87,6 @@ def write_to_text(bucket_name, prefix):
 
         json_string = output.download_as_string()
         response = json.loads(json_string)
-
-
         # The actual response for the first page of the input file.
         for m in range(len(response['responses'])):
 
@@ -99,12 +97,13 @@ def write_to_text(bucket_name, prefix):
             except(KeyError):
                 print("No annotation for this page.")
 
+
             # Here we print the full text from the first page.
             # The response contains more information:
             # annotation/pages/blocks/paragraphs/words/symbols
             # including confidence scores and bounding boxes
-            print('Full text:\n')
-            print(annotation['text'])
+            # print('Full text:\n')
+            # print(annotation['text'])
             
             with open("transcription.txt", "a+", encoding="utf-8") as f:
                 f.write(annotation['text'])

@@ -4,7 +4,11 @@ co = cohere.Client('ISZTWo9YqEizcG710vFjlUgCyIVZF6wCJUUwLLEX') #This is my Coher
 #Below is where you can paste any resume as a string. (You will replace this part with your code, so that the prgram inputs your string instead of this hard coded one)
 
 #Function that intakes the string resume, and outputs a list of strings that are the responses to fill the form with
-def write_post(resume):
+def write_post():
+    f = open("transcription.txt", "r")
+    resume = ''
+    for line in f.readlines():
+        resume += line
     # Define your prompts - keeping as long answers for now, we will fix later
     prompts = [
         f'Pretend you are me. Based on my resume, what are your strengths  \"{resume}\"',
