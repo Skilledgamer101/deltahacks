@@ -4,19 +4,16 @@ co = cohere.Client('ISZTWo9YqEizcG710vFjlUgCyIVZF6wCJUUwLLEX') #This is my Coher
 #Below is where you can paste any resume as a string. (You will replace this part with your code, so that the prgram inputs your string instead of this hard coded one)
 
 #Function that intakes the string resume, and outputs a list of strings that are the responses to fill the form with
-def write_post():
+def write_post(questions):
     f = open("transcription.txt", "r")
     resume = ''
     for line in f.readlines():
         resume += line
     # Define your prompts - keeping as long answers for now, we will fix later
-    prompts = [
-        f'Pretend you are me. Based on my resume, what are your strengths  \"{resume}\"',
-        f'Pretend you are me. Based on my resume, What are some of your experiences?   \"{resume}\"',
-        f'Pretend you are me. Based on my resume, Why do you want to work at Cohere? \"{resume}\"',
-        f'Pretend you are me.  Based on my resume, What is an example of a challenge you face? \"{resume}\"',
-        f'Pretend you are me. Based on my resume, What is your tech stack? \"{resume}\"'
-    ]
+    prompts = []
+    for q in questions:
+        prompt = f'Answer in first person. Based on my resume, {q}  \"{resume}\"'
+        prompts.append(prompt)
 
     responses = []
     for prompt in prompts:
@@ -25,7 +22,7 @@ def write_post():
             response = co.generate(
                 model='command',
                 prompt=prompt,
-                max_tokens=100,
+                max_tokens=500,
                 temperature=0.9,
                 k=0,
                 p=0.75,
@@ -46,22 +43,3 @@ def write_post():
 
     answers = [response.replace('\n', ' ') for response in responses]
     return answers
-
-def form_filler(answers):
-
-  #following code is used for filling out the form :
-  
-  formlink = input("Enter the form link: ")
-  
-  formlink = formlink + "?usp=pp_url" #if they get the ending already fix
-  for i in range(len(answers)):
-    tempList = answers[i].split(" ")
-    answers[i] = "+".join(tempList)
-  
-  questions = ["entry.1299976051", "entry.1550187157", "entry.1472121668", "entry.639995429", "entry.2045628772"]
-  
-  for i in range(len(questions)):
-    formlink = formlink + "&" + questions[i] + "=" + answers[i]
-  
-  print(answers)
-  print("New Form Link: " + formlink)
