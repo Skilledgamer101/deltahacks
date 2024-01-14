@@ -18,7 +18,7 @@ os.environ["COHERE_API_KEY"] = 'ISZTWo9YqEizcG710vFjlUgCyIVZF6wCJUUwLLEX'
 # Initialize Cohere embeddings
 embeddings = CohereEmbeddings()
 db = Chroma.from_documents(docs, embeddings)
-qa = VectorDBQA.from_chain_type(llm=Cohere(), chain_type="stuff", vectorstore=db)
+qa = VectorDBQA.from_chain_type(llm=Cohere(), chain_type="stuff", vectorstore = db)
 
 query = "Based on my resume, tell me what I am good at"
 print(qa.run(query))
