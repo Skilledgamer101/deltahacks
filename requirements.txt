@@ -9,3 +9,8 @@ google-cloud-vision
 google-resumable-media
 googleapis-common-protos
 google-api-core
+cohere
+langchain
+pypdf
+tiktoken
+chromadb
