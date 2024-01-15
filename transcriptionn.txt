@@ -1,30 +1,4 @@
-Implemented 3 regular expressions to efficiently locate specific text, such as
-date, time, and duration of job
-Retrieved 7 data points through web scraping for each job posting, such as the
-role, company name, and location
-Automatic Desk Fan May 2023 - Jul. 2023
-Engineered a 5-speed motorized desk fan that switches on/off based on distance
-sensor data using Python
-Reduced electricity usage by 30% for individuals who forget to turn off their
-traditional fan
-Soldered 80 header pins onto T-cobbler and successfully wired 4 devices into
-breadboard
-Designed 5+ parts in Autodesk Inventor, such as fan casing, platform, and blades,
-and 3D printed them
-Devised a unique base with 4 different attachable 'slopes' to customize the angle
-of the fan
-Education
-Bachelor of Engineering, Software & Biomedical Engineering Sept. 2022
-GPA: 3.9/4.0
-McMaster University
-Skills
-Python, Java, C, bash
-Object-oriented programming
-Hardware engineering
-Data analysis
-Machine learning
-Web development
-Apr. 2027Mansoor Lunawadi
+Mansoor Lunawadi
 (647) 619-5152 | mansoorlunawadi@yahoo.ca | Projects | LinkedIn | GitHub
 Qualifications
 Software design via Python to automate several tasks, ranging from checking for new

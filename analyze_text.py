@@ -77,6 +77,9 @@ def write_to_text(bucket_name, prefix):
     for blob in blob_list:
         print(blob.name)
 
+    # empty file if exist
+    f = open("transcriptionn.txt", "w")
+
     # Process the first output file from GCS.
     # Since we specified batch_size=2, the first response contains
     # the first two pages of the input file.
