@@ -6,13 +6,13 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 options = webdriver.ChromeOptions()
-#options.add_argument('--headless')
+options.add_argument('--headless')
 options.add_argument('--ignore-certificate-errors')
 options.add_argument('--incognito')
 options.add_argument('--no-sandbox')
 options.add_argument('--disable-dev-shm-usage')
 
-browser = webdriver.Chrome(r"C:\Windows\System32\chromedriver.exe", chrome_options = options)
+browser = webdriver.Chrome(r"/home/mansoorlunawadi/deltahacks/chromedriver.exe", chrome_options = options)
 browser.get(r"https://docs.google.com/forms/d/e/1FAIpQLSdhxqopQPUkUWsntlTyMolWr4Ab4NMuDiGHT4_gaGE4GIR1eg/viewform?pli=1")
 
 all_elements = browser.find_elements(By.CSS_SELECTOR, "textarea")

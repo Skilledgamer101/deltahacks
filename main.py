@@ -9,10 +9,10 @@ bucket, prefix = at.async_detect_document(src, dest)
 at.write_to_text(bucket, prefix)
 
 # get answers to write based on PDF content (in folder)
-ans = form.write_post()
+#ans = form.write_post()
 
 # fill out form and print new form link
-form.form_filler(ans)
+#form.form_filler(ans)
 
 
 
