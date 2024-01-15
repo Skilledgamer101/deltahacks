@@ -103,6 +103,6 @@ def write_to_text(bucket_name, prefix):
             # print('Full text:\n')
             # print(annotation['text'])
             
-            with open("transcriptionn.txt", "w", encoding="utf-8") as f:
+            with open("transcriptionn.txt", "a+", encoding="utf-8") as f:
                 f.write(annotation['text'])
     print("The text has been saved to a local file in the current folder called transcriptionn.txt")
