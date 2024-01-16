@@ -10,7 +10,8 @@ options.add_argument('--ignore-certificate-errors')
 options.add_argument('--incognito')
 options.add_argument('--no-sandbox')
 options.add_argument('--disable-dev-shm-usage')    
-browser = webdriver.Chrome(r"C:\Windows\System32\chromedriver.exe", chrome_options = options)
+# might have to specify full path below
+browser = webdriver.Chrome(r".\chromedriver.exe", chrome_options = options)
 def get(link):
     
     browser.get(link)
