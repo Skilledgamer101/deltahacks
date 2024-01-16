@@ -30,9 +30,10 @@ To get started with SwiftApps, follow these simple steps:
 5. Enter the same link as the storage destination but remove the ".pdf" part from the end
 6. The program should extract all of the text from the resume and save a .txt file in the Google Cloud Shell current working directory
 7. Transfer this file to your local computer (e.g., via Git)
-8. Run the `fill.py` program on your local computer (after installing requirements locally as well)
-9. Enter your Cohere API key
-10. Enter a link to the Google Form which you'd like to fill
+8. Install all of the requirements for this program locally (as described above)
+9. Run the `fill.py` program on your local computer
+10. Enter your Cohere API key
+11. Enter a link to the Google Form which you'd like to fill
 
 ## Contributing
 We welcome contributions! If you have suggestions, bug reports, or would like to add new features, please open an issue or submit a pull request.
