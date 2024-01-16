@@ -36,5 +36,11 @@ To get started with SwiftApps, follow these simple steps:
 11. Enter path to chromedriver (the one provided in this repository works with Google Chrome Version 120.0.6099.217 (Official Build) (64-bit))
 12. Enter a link to the Google Form which you'd like to fill
 
+## Sample Links
+1. [Resume PDF on Google Cloud Storage](gs://deltahacks-form-filler/mansoor_resume_bare.pdf)
+2. [GCS Storage Link](gs://deltahacks-form-filler/m)
+3. [Google Form Link](https://docs.google.com/forms/d/e/1FAIpQLSdhxqopQPUkUWsntlTyMolWr4Ab4NMuDiGHT4_gaGE4GIR1eg/viewform?pli=1)
+
+
 ## Contributing
 We welcome contributions! If you have suggestions, bug reports, or would like to add new features, please open an issue or submit a pull request.
