@@ -37,9 +37,9 @@ To get started with SwiftApps, follow these simple steps:
 12. Enter a link to the Google Form which you'd like to fill
 
 ## Sample Links
-1. [Resume PDF on Google Cloud Storage](gs://deltahacks-form-filler/mansoor_resume_bare.pdf)
-2. [GCS Storage Link](gs://deltahacks-form-filler/m)
-3. [Google Form Link](https://docs.google.com/forms/d/e/1FAIpQLSdhxqopQPUkUWsntlTyMolWr4Ab4NMuDiGHT4_gaGE4GIR1eg/viewform?pli=1)
+1. gs://deltahacks-form-filler/mansoor_resume_bare.pdf (Resume PDF on Google Cloud Storage)
+2. gs://deltahacks-form-filler/m (GCS Storage Link)
+3. https://docs.google.com/forms/d/e/1FAIpQLSdhxqopQPUkUWsntlTyMolWr4Ab4NMuDiGHT4_gaGE4GIR1eg/viewform?pli=1 (Google Form Link)
 
 
 ## Contributing
