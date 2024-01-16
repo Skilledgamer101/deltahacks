@@ -1,5 +1,3 @@
-print("Running form_filler.py...\n\n")
-
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
@@ -10,8 +8,8 @@ options.add_argument('--ignore-certificate-errors')
 options.add_argument('--incognito')
 options.add_argument('--no-sandbox')
 options.add_argument('--disable-dev-shm-usage')    
-# might have to specify full path below
-browser = webdriver.Chrome(r".\chromedriver.exe", chrome_options = options)
+path = input("Please enter COMPLETE path to chromedriver (should be in the current folder)")
+browser = webdriver.Chrome(r"{}".format(path), chrome_options = options)
 def get(link):
     
     browser.get(link)
