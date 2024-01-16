@@ -33,7 +33,8 @@ To get started with SwiftApps, follow these simple steps:
 8. Install all of the requirements for this program locally (as described above)
 9. Run the `fill.py` program on your local computer
 10. Enter your Cohere API key
-11. Enter a link to the Google Form which you'd like to fill
+11. Enter path to chromedriver (the one provided in this repository works with Google Chrome Version 120.0.6099.217 (Official Build) (64-bit))
+12. Enter a link to the Google Form which you'd like to fill
 
 ## Contributing
 We welcome contributions! If you have suggestions, bug reports, or would like to add new features, please open an issue or submit a pull request.
